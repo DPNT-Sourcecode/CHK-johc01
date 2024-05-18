@@ -27,6 +27,3 @@ public class SumSolutionTest {
     }
     //System.out.print(sum(1,2));
 }
-
-
-
