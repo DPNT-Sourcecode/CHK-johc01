@@ -8,8 +8,7 @@ public class CheckoutSolution {
         int nr_b=0;
         int nr_c=0;
         int nr_d=0;
-        if (skus.isEmpty())
-            return -1;
+
         for (char i:skus.toCharArray())
         {
 
@@ -23,7 +22,8 @@ public class CheckoutSolution {
                     nr_c++;
                 else nr_d++;
             }
-
+        if (skus.isEmpty())
+            return 0;
         if (nr_a==0||nr_b==0||nr_c==0||nr_d==0)
         {
             return -1;
@@ -40,5 +40,6 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
