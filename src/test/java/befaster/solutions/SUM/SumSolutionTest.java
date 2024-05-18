@@ -9,9 +9,9 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class SumSolutionTest {
     private SumSolution sum;
-    int sum(param[0], param[1])
+    public int sum(int param0,int param1)
     {
-        return param[0]+param[1];
+        return param0+param1;
     }
     @BeforeEach
     public void setUp() {
@@ -23,4 +23,5 @@ public class SumSolutionTest {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
 }
+
 
