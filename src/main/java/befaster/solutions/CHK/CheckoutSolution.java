@@ -4,10 +4,15 @@ import befaster.runner.SolutionNotImplementedException;
 
 public class CheckoutSolution {
     public Integer checkout(String skus) {
-        for (int i=0;i<skus.length();i++)
+        for (char i:skus.toCharArray())
         {
-            
+            if (i=='A')
+            {
+                return (int) i;
+            }
         }
+        return null;
     }
 }
+
 
