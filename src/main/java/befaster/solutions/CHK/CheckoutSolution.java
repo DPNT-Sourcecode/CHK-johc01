@@ -7,6 +7,7 @@ public class CheckoutSolution {
         int nr_a=0;
         int nr_b=0;
         int nr_c=0;
+        int nr_d=0;
         for (char i:skus.toCharArray())
         {
             if (i=='A')
@@ -15,7 +16,9 @@ public class CheckoutSolution {
             }
             else if (i=='B')
                 nr_b++;
-            else nr_c++;
+            else if (i=='C')
+                nr_c++;
+            else nr_d++;
         }
         int sum=0;
         if (nr_a%3==0)
@@ -26,11 +29,12 @@ public class CheckoutSolution {
             sum+=nr_a*50;
         if (nr_b%2==0)
         {
-            sum+=nr_b/2*
+            sum+=nr_b/2*45;
         }
+        else
+            sum+=nr_b*30;
+        sum+=nr_c*20;
+        sum+=nr_d*
 
     }
 }
-
-
-
