@@ -25,16 +25,26 @@ public class CheckoutSolution {
         {
             sum+=nr_a/3*130;
         }
-        else
-            sum+=nr_a*50;
+        else if ((nr_a>3)&&(nr_a%3!=0))
+        {
+            sum+=nr_a/3*130;
+            sum+=nr_a%3*50;
+        }
+
         if (nr_b%2==0)
         {
             sum+=nr_b/2*45;
         }
-        else
-            sum+=nr_b*30;
+        else if ((nr_b>2)&&(nr_b%2!=0))
+        {
+            sum+=nr_b/2*45;
+            sum+=nr_b%2*30;
+        }
+
         sum+=nr_c*20;
-        sum+=nr_d*
+        sum+=nr_d*15;
+        return sum;
 
     }
 }
+
